@@ -1,0 +1,81 @@
+
+.menu
+  background-color lightblue
+  cursor pointer
+  height 50px
+  @media screen and (max-width 720px)
+    display none
+  .row
+    .button
+      height 50px
+      position relative
+      padding-top 10px
+      border 1px solid gray
+      text-align center
+      font-size 1.2em
+      //font-family 'Gabriela', serif
+      @media screen and (max-width 1000px)
+        font-size 1em
+.mobile
+  position relative
+  display block
+  .menu_mobile
+    position relative
+    display inline-block
+    width 60px
+    height 40px
+    padding-top 10px
+    text-align center
+    cursor pointer
+    background-color lightgreen
+
+  .tel
+    position relative
+    display inline-block
+    font-size 20px
+    text-align center
+    width 250px
+    height 40px
+
+  @media screen and (min-width 721px)
+    display none
+.head
+  .row
+    .logo
+      img
+        position relative
+        width 100%
+        margin 0 auto
+        @media screen and (min-width 992px)
+          width 80%
+    .name_site
+      font-size 25px
+      color darkolivegreen
+      padding 15px
+      font-family 'Gabriela', serif
+      @media screen and (max-width 992px)
+        font-size 22px
+      @media screen and (max-width 650px)
+        font-size 18px
+        padding 5px
+      @media screen and (max-width 490px)
+        font-size 15px
+    .phone
+      background-color lightblue
+      text-align center
+      font-size 1.5em
+      /*display table-cell
+      vertical-align middle*/
+      height 200px
+      line-height 200px
+      .number
+        line-height normal
+        display inline-block
+        vertical-align middle
+      @media screen and (max-width 768px)
+        height 50px
+        line-height 50px
+      @media screen and (max-width 720px)
+        display none
+.invisible
+  display none

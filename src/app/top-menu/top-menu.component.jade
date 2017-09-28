@@ -1,0 +1,22 @@
+
+.head.container
+    .row
+        .logo.col-sm-3.col-xs-4
+            img(src='assets/pic/logo.jpg')
+        .name_site.col-sm-7.container.
+            Центр помощи семье "ПОМОЖЕМ ВМЕСТЕ" - это группа верующих православных людей,
+            которые готовы придти на помощь нуждающимся семьям
+        .phone.col-sm-2
+            .number Телефон горячей линии 33-80-03
+.menu.container
+    .row
+        //.button.col-xs-2((click)="toggle()", *ngFor="let item of items" ){{item}}
+        .button.col-xs-2((click)="item=='Контакты'?toggle():increase()", *ngFor="let item of items" ){{item}}
+.mobile
+    .menu_mobile Меню
+    .tel Тел.: 33-80-03
+
+p Количество кликов {{count}}
+button( (click)="increase()") Click
+
+app-map([ngClass]="{invisible: visibility}")
