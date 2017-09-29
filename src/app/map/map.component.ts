@@ -13,6 +13,7 @@ export class MapComponent implements OnInit {
 
   ngOnInit() {
   }
+  pathImage: string = '/assets/pic/';
   public heroes:Array<Object> = [
     {id: 1, name: 'Катерина Сухомлина', job: 'Руководитель', phone: '8-952-803-8513', email: 'tomsk.ekaterina@yandex.ru', photo: '/assets/pic/id1.jpg'},
     {id: 2, name: 'Ольга Рубцова', job: 'Куратор по закупкам и финансам', phone: '8-903-951-2399', email: '', photo: '/assets/pic/id1.jpg'},
